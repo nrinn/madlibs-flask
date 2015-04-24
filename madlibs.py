@@ -44,8 +44,12 @@ def show_madlib():
     adjective = request.args.get("adjectives")
     color = request.args.get("color")
     noun = request.args.get("noun")
-    
-    return render_template("madlib.html", color = color, adjective = adjective, person = person, noun = noun)
+    insult = request.args.get("insult")
+    checkbox1 = request.args.getlist("verb")
+
+    print checkbox1, "BECCA"
+
+    return render_template("madlib.html", color = color, adjective = adjective, insult = insult, person = person, noun = noun, checkbox = checkbox1)
 
 
 

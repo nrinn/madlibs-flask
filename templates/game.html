@@ -7,7 +7,7 @@
     <h1>Let's play a game!</h1>
     <form action="/madlib">
         <label>Name a person. <input type="text" name="person"></label><br>
-         <label>Adjective: 
+         <label>Pick an adjective: 
             <select name="adjectives">
                 <option value="awesome">awesome</option>
                 <option value="terrific">terrific</option>
@@ -25,7 +25,15 @@
                 <option value="lovely">lovely</option>
             </select></label><br>
         <label>Pick a color. <input type="text" name="color"></label><br>
-        <label>Pick a noun. <input type="text" name="noun"></label><br>
+        <label>Pick a noun. <input type="text" name="noun"></label><br><br>
+        <label>Pick an adjective:</label><br>
+            <input value="smelly" name="insult" type="radio">smelly<br>
+            <input value="ugly" name="insult" type="radio">ugly<br>
+            <input value="terrible" name="insult" type="radio">terrible<br><br>
+        <label>Pick a verb: </label><br>
+        <input type="checkbox" name="verb" value="swimming" />swimming<br>
+        <input type="checkbox" name="verb" value="chattering" />chattering<br>
+        <input type="checkbox" name="verb" value="lathering" />lathering<br>        
         <input type="submit">
 
     </form>
